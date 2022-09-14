@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -v "$LANG_DEPLOY_ROOT" ]
+if [ ! -v "LANG_DEPLOY_ROOT" ]
 then
     echo "LANG_DEPLOY_ROOT not set"
 else

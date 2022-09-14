@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-LANG_DEPLOY_ROOT="$HOME/langDeploy"
+export LANG_DEPLOY_ROOT="$HOME/langDeploy"
 
 for lang_name in go d
 do
@@ -14,4 +14,4 @@ done
 unset lang_name
 unset file_to_surce
 
-unsert LANG_DEPLOY_ROOT
+unset LANG_DEPLOY_ROOT
