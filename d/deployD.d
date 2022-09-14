@@ -189,7 +189,7 @@ void buildTarget(
 	buildPhobos(target_root_dir);
 	buildTools(target_root_dir);
 	// // buildDUB(target_root_dir);
-	createBashSourceScript(target_root_dir);
+	//createBashSourceScript(target_root_dir);
 	
 }
 
@@ -216,7 +216,7 @@ unset DLANG_PATH
 
 void main(string[] args)
 {
-	auto wd = expandTilde("~/dlang");
+	auto wd = expandTilde("~/langDeploy/d");
 	
 	writeln("UPDATING:");
 	writeln("==============================");
