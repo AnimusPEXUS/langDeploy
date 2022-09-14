@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ ! -v "$LANG_DEPLOY_ROOT" ]
+then
+    echo "LANG_DEPLOY_ROOT not set"
+else
+
+    LATEST_SYMLINK="$LANG_DEPLOY_ROOT/nim/nim_latest_symlink"
+    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]
+    then
+        export PATH="$LATEST_SYMLINK/bin:"$PATH
+    else
+        echo "problems with $LATEST_SYMLINK symlink"
+    fi
+    unset LATEST_SYMLINK
+
+fi
+
+

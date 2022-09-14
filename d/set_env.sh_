@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ ! -v "$LANG_DEPLOY_ROOT" ]
+then
+    echo "LANG_DEPLOY_ROOT not set"
+else
+
+    LATEST_SYMLINK="$LANG_DEPLOY_ROOT/d/d_latest_symlink"
+    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]
+    then
+
+        DLANG_PATH="$LATEST_SYMLINK/dmd/generated/linux/release/64:$LATEST_SYMLINK/tools/generated/linux/64"
+
+        export PATH="$DLANG_PATH:$PATH"
+
+        unset DLANG_PATH
+
+    else
+        echo "problems with $LATEST_SYMLINK symlink"
+    fi
+    unset LATEST_SYMLINK
+
+
+fi
+
+

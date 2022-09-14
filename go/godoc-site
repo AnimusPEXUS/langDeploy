@@ -1,0 +1,3 @@
+#!/bin/bash
+
+go run golang.org/x/website/cmd/golangorg -http=:6060

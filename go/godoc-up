@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo updating
+
+~/if/soxy go get -u -v golang.org/x/tools/cmd/godoc
+
+echo starting
+go run golang.org/x/tools/cmd/godoc -http=:6060
