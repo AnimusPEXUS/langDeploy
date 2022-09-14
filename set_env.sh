@@ -12,5 +12,6 @@ do
     fi
 done
 unset lang_name
+unset file_to_surce
 
 unsert LANG_DEPLOY_ROOT
