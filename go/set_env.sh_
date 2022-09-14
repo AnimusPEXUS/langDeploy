@@ -5,7 +5,7 @@ then
     echo "LANG_DEPLOY_ROOT not set"
 else
 
-    LATEST_SYMLINK="$LANG_DEPLOY_ROOT/go/go_latest_symlink"
+    LATEST_SYMLINK="$LANG_DEPLOY_ROOT/go/active"
     if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]
     then
 
