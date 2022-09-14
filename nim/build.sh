@@ -20,6 +20,6 @@ git checkout "$1"
 
 cd src
 
-bash ./all.bash
+bash ./build_all.sh
 
 
