@@ -2,7 +2,7 @@
 
 PPWD="`pwd`"
 
-for i in rust cargo
+for i in rust # cargo
 do
 
     cd "$PPWD"
