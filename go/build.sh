@@ -2,7 +2,7 @@
 
 PPWD="`pwd`"
 PPWD_SOURCE="$PPWD/source"
-PPWD_TARGET="$PPWD/go_$1"
+PPWD_TARGET="$PPWD/nim_$1"
 
 cd "$PPWD_SOURCE"
 git checkout master
@@ -20,6 +20,6 @@ git checkout "$1"
 
 cd src
 
-bash ./all.bash
+bash ./build_all.sh
 
 

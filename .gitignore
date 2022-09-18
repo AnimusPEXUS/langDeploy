@@ -9,6 +9,11 @@
 /nim/source
 /nim/nim_*
 
+/rust/rust
+/rust/rust-*
+/rust/cargo
+/rust/cargo-*
+
 /d/d_*
 /d/bin
 /d/dmd

@@ -3,7 +3,7 @@
 
 export LANG_DEPLOY_ROOT="$HOME/langDeploy"
 
-for lang_name in go d nim
+for lang_name in go d nim rust
 do
     file_to_source="$LANG_DEPLOY_ROOT/$lang_name/set_env.sh"
     if [ -f "$file_to_source" -a -x "$file_to_source" ]
