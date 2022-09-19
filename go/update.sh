@@ -2,7 +2,7 @@
 
 cd "$PPWD"
 
-if [ ! -d $i ]
+if [ ! -d ./source ]
 then
     git clone "https://go.googlesource.com/go" ./source
 fi
