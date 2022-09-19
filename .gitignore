@@ -14,6 +14,12 @@
 /rust/cargo
 /rust/cargo-*
 
+/terra/terra-*
+/terra/source
+
+/zig/zig-*
+/zig/source
+
 /d/d_*
 /d/bin
 /d/dmd
