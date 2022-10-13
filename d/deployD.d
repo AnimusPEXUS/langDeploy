@@ -8,8 +8,8 @@ import std.process;
 import std.format;
 import std.conv;
 
-const auto SRC_GET_NAMES = ["dmd", "druntime", "phobos", "tools", "dub"];
-const auto SRC_BUILD_NAMES = ["dmd", "druntime", "phobos", "tools"];
+const auto SRC_GET_NAMES = ["dmd", "phobos", "tools", "dub"];  // "druntime" removed
+const auto SRC_BUILD_NAMES = ["dmd", "phobos", "tools"];  // "druntime" removed
 const string ENV_ENABLER_FILE_NAME = ".dlang_enable_bash_environment";
 
 void isDirOk(string path)
