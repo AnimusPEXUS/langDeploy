@@ -116,16 +116,21 @@ void buildDMD(
 {
 	auto tdmd = buildPath(target_root_dir, "dmd");
 	// auto tlocal = buildPath(target_root_dir, "_local");
-	
-	chdir(tdmd);
+
+	auto tdmd_c_s = buildPath(tdmd, "compiler", "src");
+
+	writeln("cd to: ", tdmd_c_s);
+	writeln("compiling ./build.d");
+	chdir(tdmd_c_s);
 	{
-		auto pid = spawnProcess(["dmd", "src/build.d"]);
+		auto pid = spawnProcess(["dmd", "./build.d"]);
 		if (wait(pid) != 0)
 		{
 			throw new Exception("Couldn't build source here: " ~ tdmd);
 		}
 	}
-	
+
+	writeln("executing ./build.d");
 	{
 		auto pid = spawnProcess(["./build"]);
 		if (wait(pid) != 0)
@@ -133,7 +138,7 @@ void buildDMD(
 			throw new Exception("Couldn't build source here: " ~ tdmd);
 		}
 	}
-	
+
 	/* pid = spawnProcess(
 	["rdmd", "src/build.d",
 	"install", "INSTALL="~tlocal]
