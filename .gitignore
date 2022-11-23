@@ -13,6 +13,8 @@
 /rust/rust-*
 /rust/cargo
 /rust/cargo-*
+/rust/rustup
+/rust/rustup-*
 
 /terra/terra-*
 /terra/source

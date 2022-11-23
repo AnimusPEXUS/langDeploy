@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#function find_latest_version {
+#    find_latest_version_res=`git tag | grep -x -P \'(\d+\.)+\d+\' | sort -V  | tail -n 1`
+#}
+
 PPWD="`pwd`"
 
 if [ -z "$1" ]
