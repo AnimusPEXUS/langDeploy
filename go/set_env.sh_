@@ -6,18 +6,14 @@ then
 else
 
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/go/active"
-    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]
-    then
 
-        export GOROOT="$LATEST_SYMLINK"
+    export GOROOT="$LATEST_SYMLINK"
 
-        export GOPATH="$HOME/gopath_main:$HOME/gopath_work"
+    export GOPATH="$HOME/gopath_main:$HOME/gopath_work"
 
-        export PATH="$HOME/gopath_main/bin:$HOME/gopath_work/bin:$PATH"
-        export PATH="$GOROOT/bin":"$PATH"
-    else
-        echo "problems with $LATEST_SYMLINK symlink"
-    fi
+    export PATH="$HOME/gopath_main/bin:$HOME/gopath_work/bin:$PATH"
+    export PATH="$GOROOT/bin":"$PATH"
+
     unset LATEST_SYMLINK
 
 fi

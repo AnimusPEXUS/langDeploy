@@ -13,10 +13,6 @@ else
     # fi
 
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/rust/active"
-    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]; then
-        export PATH="$LATEST_SYMLINK/bin:$PATH"
-    else
-        echo "problems with $LATEST_SYMLINK symlink"
-    fi
+    export PATH="$LATEST_SYMLINK/bin:$PATH"
     unset LATEST_SYMLINK
 fi
