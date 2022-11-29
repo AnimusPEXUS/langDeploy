@@ -1,13 +1,11 @@
 #!/bin/bash
 
-if [ ! -v "LANG_DEPLOY_ROOT" ]
-then
+if [ ! -v "LANG_DEPLOY_ROOT" ]; then
     echo "LANG_DEPLOY_ROOT not set"
 else
 
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/emscripten/active"
-    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]
-    then
+    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]; then
 
         export PATH="$HOME/gopath_main/bin:$HOME/gopath_work/bin:$PATH"
         export PATH="$GOROOT/bin":"$PATH"
@@ -17,5 +15,3 @@ else
     unset LATEST_SYMLINK
 
 fi
-
-

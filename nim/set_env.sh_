@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [ ! -v "LANG_DEPLOY_ROOT" ]
-then
+if [ ! -v "LANG_DEPLOY_ROOT" ]; then
     echo "LANG_DEPLOY_ROOT not set"
 else
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/nim/active"
@@ -10,5 +9,3 @@ else
 
     unset LATEST_SYMLINK
 fi
-
-

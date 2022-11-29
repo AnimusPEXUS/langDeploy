@@ -23,9 +23,11 @@
 /zig/source
 
 
-/emscripten/emsdk
-/emscripten/emsdk-*
-/emscripten/emsdk_*
+/emscripten/emscripten
+/emscripten/emscripten-*
+/emscripten/emscripten_*
+/emscripten/emsdk*
+
 
 /haxe/haxe
 

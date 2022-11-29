@@ -2,14 +2,10 @@
 
 cd "$PPWD"
 
-if [ ! -d ./source ]
-then
-    git clone "https://go.googlesource.com/go" ./source
+if [ ! -d ./source ]; then
+    git clone --recurse-submodules "https://go.googlesource.com/go" ./source
 fi
 
 cd source
 
-git pull
-
-
-
+git pull --recurse-submodules

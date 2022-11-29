@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PPWD="`pwd`"
+PPWD="$(pwd)"
 PPWD_SOURCE="$PPWD/source"
 PPWD_TARGET="$PPWD/nim_$1"
 
@@ -21,5 +21,3 @@ git checkout "$1"
 cd src
 
 bash ./build_all.sh
-
-

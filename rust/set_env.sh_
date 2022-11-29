@@ -3,9 +3,6 @@
 if [ ! -v "LANG_DEPLOY_ROOT" ]; then
     echo "LANG_DEPLOY_ROOT not set"
 else
-
-    export PATH="$HOME/.cargo/bin:$PATH"
-
     # next does same as `export PATH="$HOME/.cargo/bin:$PATH"`
     # if [ -f "$HOME/.cargo/env" ]
     # then
@@ -15,4 +12,6 @@ else
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/rust/active"
     export PATH="$LATEST_SYMLINK/bin:$PATH"
     unset LATEST_SYMLINK
+
+    export PATH="$HOME/.cargo/bin:$PATH"
 fi
