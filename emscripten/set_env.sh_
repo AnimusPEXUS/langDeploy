@@ -5,13 +5,15 @@ if [ ! -v "LANG_DEPLOY_ROOT" ]; then
 else
 
     LATEST_SYMLINK="$LANG_DEPLOY_ROOT/emscripten/active"
-    if [ -L "$LATEST_SYMLINK" -a -d "$LATEST_SYMLINK" ]; then
 
-        export PATH="$HOME/gopath_main/bin:$HOME/gopath_work/bin:$PATH"
-        export PATH="$GOROOT/bin":"$PATH"
+    if [ -f "$LATEST_SYMLINK/emsdk_env.sh" ]
+    then
+	echo "using $LATEST_SYMLINK/emsdk_env.sh"
+        source "$LATEST_SYMLINK/emsdk_env.sh"
     else
-        echo "problems with $LATEST_SYMLINK symlink"
+	echo "emscripten link not found"
     fi
+
     unset LATEST_SYMLINK
 
 fi

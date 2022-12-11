@@ -28,6 +28,7 @@
 /emscripten/emscripten_*
 /emscripten/emsdk*
 
+/llvm
 
 /haxe/haxe
 
