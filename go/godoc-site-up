@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo updating
-
-~/if/soxy go get -u -v golang.org/x/website/cmd/golangorg
-
-echo starting
-go run golang.org/x/website/cmd/golangorg -http=:6060
