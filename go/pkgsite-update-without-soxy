@@ -1,3 +1,5 @@
 #!/bin/bash
 
 go install golang.org/x/pkgsite/cmd/pkgsite@latest
+
+echo "install exited with $?"

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-~/langDeploy/go/soxy ~/langDeploy/go/pkgsite-start
+~/langDeploy/go/soxy ~/langDeploy/go/pkgsite-start-without-soxy
 
 

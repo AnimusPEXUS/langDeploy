@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PPWD="$(pwd)"
+PPWD=~/langDeploy/go
 PPWD_SOURCE="$PPWD/source"
 PPWD_TARGET="$PPWD/go_$1"
 
