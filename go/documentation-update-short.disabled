@@ -1,4 +1,0 @@
-#!/bin/bash
-
-exit 1
-~/langDeploy/go/gomod111 ~/langDeploy/go/documentation-update
