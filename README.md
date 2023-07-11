@@ -22,11 +22,13 @@ executable.
 .good {
  background-color: lime;
 }
-.deletion{
+
+.deletion {
  color: white;
  background-color: red;
 }
-.poor{
+
+.poor {
  color: black;
  background-color: yellow;
 }
