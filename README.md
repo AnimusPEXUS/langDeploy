@@ -42,8 +42,8 @@ executable.
 <tr>
     <td>Emscripten</td><td class="good">was ok last time I checked. but stalled</td>
 </tr>
-<tr>
 
+<tr>
     <td>Haxe</td><td class="poor">stalled</td>
 </tr>
 <tr>
