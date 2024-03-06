@@ -23,7 +23,7 @@ executable.
     <td>Go</td><td>good</td><td><a href="./go/README.md">readme</a></td>
 </tr>
 <tr>
-    <td>D</td><td>good</td><a href="./d/README.md">readme</a></td>
+    <td>D</td><td>good</td><td><a href="./d/README.md">readme</a></td>
 </tr>
 <tr>
     <td>Emscripten</td><td>check needed</td><td></td>
