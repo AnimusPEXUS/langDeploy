@@ -20,7 +20,7 @@ build certain tag. requires tag as parameter
 </tr>
 </table>
 
-## local documentation servers ==
+## local documentation servers
 
 NOTE: those programs modified by their creators frequently, so 
 those often go out of order. probably you'll have to tinker those to make
