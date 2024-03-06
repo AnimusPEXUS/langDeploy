@@ -1,4 +1,8 @@
-use deployD.d to download, build and setup latest dmd
+use deployD.d to download, build and setup latest dmd.
+
+if You don't have already dmd, you can compile deployD.d to 
+excutable using LLVM's or GCC's D compiler and run resulting deployD 
+in this dir instead of directly deployD.d.
 
 deployD.d should be started with git tag of dmd to build.
 
