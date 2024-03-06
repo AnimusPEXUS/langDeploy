@@ -1,5 +1,5 @@
 
-== clone and build ==
+## clone and build
 
 <table>
 <tr>
@@ -20,13 +20,13 @@ build certain tag. requires tag as parameter
 </tr>
 </table>
 
-== local documentation servers ==
+## local documentation servers ==
 
 NOTE: those programs modified by their creators frequently, so 
 those often go out of order. probably you'll have to tinker those to make
 them work
 
-commands suffixed with `gomod111` - tryin to enforce GO 1.11 module system.
+commands suffixed with `gomod111` - trying to enforce GO 1.11 module system.
 
 commands suffixed with `soxy` - trying to force socks proxy usage 
 (for those, who might be behind bogus firewall or who blockd by google and getting 403 http errors and friends)
