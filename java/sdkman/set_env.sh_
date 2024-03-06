@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -v "LANG_DEPLOY_ROOT" ]; then
+    echo "LANG_DEPLOY_ROOT not set"
+else
+
+    export SDKMAN_DIR="$SDKMAN_DIR/java/sdkman"
+
+fi

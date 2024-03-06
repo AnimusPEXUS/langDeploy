@@ -18,46 +18,38 @@ executable.
 
 ## Language Support Status
 
-<style>
-.good {
- background-color: lime;
-}
-
-.deletion {
- color: white;
- background-color: red;
-}
-
-.poor {
- color: black;
- background-color: yellow;
-}
-</style>
-
 <table>
 <tr>
-    <td>Go</td><td class="good">good</td>
+    <td>Go</td><td>good</td><td><a href="./go/README.md">readme</a></td>
 </tr>
 <tr>
-    <td>D</td><td class="good">was ok last time I checked. but stalled</td>
+    <td>D</td><td>good</td><a href="./d/README.md">readme</a></td>
 </tr>
 <tr>
-    <td>Emscripten</td><td class="good">was ok last time I checked. but stalled</td>
+    <td>Emscripten</td><td>check needed</td><td></td>
 </tr>
 
 <tr>
-    <td>Haxe</td><td class="poor">stalled</td>
+    <td>llvm</td><td>maybe</td><td></td>
 </tr>
 <tr>
-    <td>Nim</td><td class="poor">stalled</td>
+    <td>java</td><td>maybe</td><td></td>
+</tr>
+
+<tr>
+    <td>Nim</td><td>stalled</td><td></td>
 </tr>
 <tr>
-    <td>Rust</td><td class="poor">stalled, poorly checked</td>
+    <td>Rust</td><td>stalled (requires better llvm support. maybe langDeploy should provide own llvm, os I don't like this)</td><td></td>
+</tr>
+
+<tr>
+    <td>Haxe</td><td>removed</td><td></td>
 </tr>
 <tr>
-    <td>Tarra</td><td class="poor">stalled</td>
+    <td>Tarra</td><td>removed</td><td></td>
 </tr>
 <tr>
-    <td>Zig</td><td class="deletion">going to be removed</td>
+    <td>Zig</td><td>removed</td><td></td>
 </tr>
 </table>
