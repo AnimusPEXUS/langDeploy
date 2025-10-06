@@ -19,8 +19,8 @@ this will polute your PATH.
 # Enabling languages
 
 To enable some language, cd to corresponding dir and make symlink
-'set_env.sh' to file 'set_env.sh_'. also, make sure 'set_env.sh' is
-executable.
+`set_env.sh` to file `set_env.sh_`. also, make sure `set_env.sh` is
+executable (`chmod +x set_env.sh`).
 
 # Language Support Status
 
