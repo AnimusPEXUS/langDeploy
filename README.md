@@ -13,7 +13,7 @@ This directory **MUST** be placed as `$HOME/langDeploy` so file
 Place line `source "$HOME/langDeploy/set_env.sh"` into your home's
 `.bash_profile` file.
 
-NOTE: do not use .bashrc for $HOME/langDeploy/set_env.sh execution as
+NOTE: do not use `.bashrc` for `$HOME/langDeploy/set_env.sh` execution as
 this will polute your PATH.
 
 # Enabling languages
