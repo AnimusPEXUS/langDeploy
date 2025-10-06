@@ -39,7 +39,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             tries to run godoc (local go documentation server)
         </td>
     </tr>
-
     <tr>
         <td>
             documentation-update
@@ -48,7 +47,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             tries to download new godoc tool
         </td>
     </tr>
-
     <tr>
         <td>
             gomod111
@@ -57,7 +55,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             forces use of GO111MODULE=auto env
         </td>
     </tr>
-
     <tr>
         <td>
             soxy
@@ -66,7 +63,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             forces use of socks proxy (tor 9050 port) for go get and friends
         </td>
     </tr>
-
     <tr>
         <td>
             pkgsite-start
@@ -75,7 +71,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             tries to start package documentation site
         </td>
     </tr>
-
     <tr>
         <td>
             pkgsite-update
@@ -84,7 +79,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             tries to update package documentation site
         </td>
     </tr>
-
     <tr>
         <td>
             site
@@ -93,7 +87,6 @@ commands suffixed with `soxy` - trying to force socks proxy usage
             tries to run go language documentation site
         </td>
     </tr>
-
     <tr>
         <td>
             site-update
