@@ -34,7 +34,6 @@ executable.
         <p>not ok</p>
         <div style="color: maroon;">
             2025-10-06: can't build v2.111.0 with 15.2.1 20250808 (Red Hat 15.2.1-1) gcc.
-
             waiting new tag-release. if continued like so - questions to be asked on forum.
         </div>
     </td>
