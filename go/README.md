@@ -1,5 +1,5 @@
 
-<a href="..">langDeploy</a> must be properly deployed in your linux profile before starting following scripts
+[langDeploy](..) must be properly deployed in your linux profile before starting following scripts
 
 ## utils
 
@@ -38,6 +38,6 @@ those sometimes going out of order. sometimes scrips, provided here, should be f
 ### doc-site
 
 * `./doc-site` - golang site with language documentation, mauals and howtos. 
-    ([lang spec](http://localhost:6061/go.dev/ref/spec), http://localhost:6061/go.dev/doc)
+    ([lang spec](http://localhost:6061/go.dev/ref/spec), [user manual](http://localhost:6061/go.dev/doc))
 * `./doc-site-with-soxy`
 * `./doc-site-update-with-soxy`
