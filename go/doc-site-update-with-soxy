@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo using proxy
+
+~/langDeploy/go/soxy ~/langDeploy/go/doc-site-update

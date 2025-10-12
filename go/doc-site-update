@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo updating doc-site
+
+go install golang.org/x/website/cmd/golangorg@latest
+
+echo finished code $?

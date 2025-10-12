@@ -4,6 +4,6 @@ export all_proxy="socks5://127.0.0.1:9050"
 export http_proxy=$all_proxy
 export https_proxy=$all_proxy
 
-echo "soxy installed. all_proxy, http(s)_proxy = $all_proxy"
+echo "soxy enabled. all_proxy, http(s)_proxy = $all_proxy"
 
 "$@"

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo starting at localhost:6060
-
-go run golang.org/x/tools/cmd/godoc -http=:6060

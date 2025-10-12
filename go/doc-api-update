@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo updating doc-api
+
+go install golang.org/x/tools/cmd/godoc@latest
+
+echo exit code $?

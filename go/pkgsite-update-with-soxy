@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "amalgamating with soxy"
-~/langDeploy/go/soxy ~/langDeploy/go/pkgsite-update-without-soxy
-

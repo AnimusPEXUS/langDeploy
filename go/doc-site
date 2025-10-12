@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo starting doc-site at localhost:6061
+
+go run golang.org/x/website/cmd/golangorg@latest -http=:6061
+
+res=$?
+if [ $res -ne 0 ]
+then
+    echo "can't run golang.org/x/website/cmd/golangorg"
+    echo "use ./site-update to get it"
+    exit $res
+fi

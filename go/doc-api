@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo starting doc-api at localhost:6060
+
+go run golang.org/x/tools/cmd/godoc@latest -http=:6060
+
+echo exit code $?

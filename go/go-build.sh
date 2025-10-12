@@ -21,3 +21,5 @@ git checkout --recurse-submodules "$1"
 cd src
 
 bash ./all.bash
+
+echo "script end"

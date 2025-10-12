@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo starting at localhost:6062
-
-pkgsite -list -http=:6062 -cache
-

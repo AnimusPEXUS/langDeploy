@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo updating doc-pkgapi
+
 go install golang.org/x/pkgsite/cmd/pkgsite@latest
 
-echo "install exited with $?"
+echo exit code $?

@@ -1,98 +1,42 @@
 
+<a href="..">langDeploy</a> must be properly deployed in your linux profile before starting following scripts
+
+## utils
+
+* `gomod111` - prefix to disable module system usage
+* `soxy` - prefix to run over Tor
+* `set_env.sh` - create this symlink to `set_env.sh_` to enable it in langDeploy
+* `set_env.sh_` - properly sets up golang environment
+
+note: before continuing, after you created `set_env.sh` symlinc, open new terminal, which will use updated environment
+
 ## clone and build
 
-<table>
-<tr>
-<td>
-update.sh
-</td>
-<td>
-clone to or update local  go source repo
-</td>
-</tr>
-<tr>
-<td>
-build.sh
-</td>
-<td>
-build certain tag. requires tag as parameter
-</td>
-</tr>
-</table>
+* `./go-update.sh` - download golang source
+* `./go-build.sh` - build golang
 
-## local documentation servers
+note: after `go-build.sh` successful run, make `active` symlink to newly built golang directory
 
-NOTE: documentation services frequently modified by their creators, so
-those often go out of order. sometimes scrips, provided here, should be fixed accordingly.
+## download and run local golang documentation services
 
-commands suffixed with `gomod111` - trying to force GO 1.11 module system usage.
+NOTE: documentation services sometimes modified by their creators, so
+those sometimes going out of order. sometimes scrips, provided here, should be fixed accordingly.
 
-commands suffixed with `soxy` - trying to force socks proxy usage
-(for those, who might be behind bogus firewall or who blockd by google and getting 403 http errors and friends)
+### doc-api
 
-<table>
-    <tr>
-        <td>
-            documentation
-        </td>
-        <td>
-            tries to run godoc (local go documentation server)
-        </td>
-    </tr>
-    <tr>
-        <td>
-            documentation-update
-        </td>
-        <td>
-            tries to download new godoc tool
-        </td>
-    </tr>
-    <tr>
-        <td>
-            gomod111
-        </td>
-        <td>
-            forces use of GO111MODULE=auto env
-        </td>
-    </tr>
-    <tr>
-        <td>
-            soxy
-        </td>
-        <td>
-            forces use of socks proxy (tor 9050 port) for go get and friends
-        </td>
-    </tr>
-    <tr>
-        <td>
-            pkgsite-start
-        </td>
-        <td>
-            tries to start package documentation site
-        </td>
-    </tr>
-    <tr>
-        <td>
-            pkgsite-update
-        </td>
-        <td>
-            tries to update package documentation site
-        </td>
-    </tr>
-    <tr>
-        <td>
-            site
-        </td>
-        <td>
-            tries to run go language documentation site
-        </td>
-    </tr>
-    <tr>
-        <td>
-            site-update
-        </td>
-        <td>
-            tries to update go language documentation site
-        </td>
-    </tr>
-</table>
+* `./doc-api` - start golang basic api site
+* `./doc-api-update` - install/update
+* `./doc-aip-update-with-soxy` - install/update using Tor proxy
+
+### doc-pkgsite
+
+* `./doc-pkgapi` - same, but for installed third party packages in current system.
+* `./doc-pkgapi-with-soxy` - sometimes pkgsite refuses to work without proxy.
+* `./doc-pkgapi-update`
+* `./doc-pkgapi-update-with-soxy`
+
+### doc-site
+
+* `./doc-site` - golang site with language documentation, mauals and howtos. (http://localhost:6061/go.dev/ref/spec, http://localhost:6061/go.dev/doc)
+* `./doc-site-with-soxy`
+* `./doc-site-update-with-soxy`

@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo updating
-
-~/langDeploy/go/soxy go install golang.org/x/tools/cmd/godoc@latest
-
-echo finished code $?
