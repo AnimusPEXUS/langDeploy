@@ -8,7 +8,7 @@
 * `set_env.sh` - create this symlink to `set_env.sh_` to enable it in langDeploy
 * `set_env.sh_` - properly sets up golang environment
 
-note: before continuing, after you created `set_env.sh` symlinc, open new terminal, which will use updated environment
+note: before continuing, after you created `set_env.sh` symlink, open new terminal, which will use updated environment
 
 ## clone and build
 
@@ -37,6 +37,7 @@ those sometimes going out of order. sometimes scrips, provided here, should be f
 
 ### doc-site
 
-* `./doc-site` - golang site with language documentation, mauals and howtos. (http://localhost:6061/go.dev/ref/spec, http://localhost:6061/go.dev/doc)
+* `./doc-site` - golang site with language documentation, mauals and howtos. 
+    ([lang spec](http://localhost:6061/go.dev/ref/spec), http://localhost:6061/go.dev/doc)
 * `./doc-site-with-soxy`
 * `./doc-site-update-with-soxy`
