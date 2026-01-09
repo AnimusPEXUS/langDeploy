@@ -22,6 +22,8 @@ note: after `go-build.sh` successful run, make `active` symlink to newly built g
 NOTE: documentation services sometimes modified by their creators, so
 those sometimes going out of order. sometimes scrips, provided here, should be fixed accordingly.
 
+todo: in following sections add sublinks
+
 ### doc-api
 
 * `./doc-api` - start golang basic api site
