@@ -28,7 +28,7 @@ todo: in following sections add sublinks
 
 * `./doc-api` - start golang basic api site
 * `./doc-api-update` - install/update
-* `./doc-aip-update-with-soxy` - install/update using Tor proxy
+* `./doc-api-update-with-soxy` - install/update using Tor proxy
 
 ### doc-pkgsite
 
